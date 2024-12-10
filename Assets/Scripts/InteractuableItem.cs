@@ -7,6 +7,8 @@ public class ObservableItem : MonoBehaviour
     private Object HintIndicator;
     [SerializeField] private Vector2? HintPosition;
 
+    #region Unity methods
+
     void Start()
     {
         HintPrefab = AssetDatabase.LoadAssetAtPath("Assets/Prefabs/Hint.prefab", typeof(Object));
@@ -17,12 +19,13 @@ public class ObservableItem : MonoBehaviour
         ShowIndicator();
     }
 
-
     void OnMouseExit()
     {
         RemoveIndicator();
     }
 
+
+    #endregion
 
     #region Private methods
 
@@ -42,7 +45,5 @@ public class ObservableItem : MonoBehaviour
     }
 
     #endregion
-
-
 
 }
