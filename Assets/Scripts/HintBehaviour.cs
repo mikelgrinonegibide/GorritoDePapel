@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class HintBehaviour : MonoBehaviour
 {
-    //public List<Actions>
     public InteractuableInfo Info;
 
 
@@ -31,7 +30,7 @@ public class HintBehaviour : MonoBehaviour
 
     private void LookAction(Container container)
     {
-        ShowContent(container);
+        ContentVisualizatorManager.Instance.ShowContent(container);
     }
 
     #endregion
