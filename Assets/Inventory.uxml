@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Inventory.uss?fileID=7433441132597879392&amp;guid=7c1c925f828236242a32ce1456d43eb3&amp;type=3#Inventory" />
+    <ui:VisualElement name="Container" style="flex-grow: 1; position: relative; align-items: center; justify-content: center; align-self: center; width: 1277px; flex-direction: row; height: 1798px;">
+        <ui:VisualElement name="Inventory" style="flex-grow: 1; flex-shrink: initial; width: 50%; height: 858px; max-width: 50%; max-height: 75%; margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; background-color: rgb(28, 32, 36); border-left-color: rgb(255, 197, 0); border-right-color: rgb(255, 197, 0); border-top-color: rgb(255, 197, 0); border-bottom-color: rgb(255, 197, 0); border-top-width: 5px; border-right-width: 5px; border-bottom-width: 5px; border-left-width: 5px; align-items: stretch; justify-content: flex-end;">
+            <ui:Label tabindex="-1" text="Inventory" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Header" style="font-size: 24px; color: rgb(255, 197, 0); margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px; border-left-color: rgb(64, 74, 82); border-right-color: rgb(64, 74, 82); border-top-color: rgb(64, 74, 82); border-bottom-color: rgb(64, 74, 82); border-bottom-width: 1px;" />
+            <ui:VisualElement name="SlotContainer" style="flex-grow: 1; flex-shrink: initial; flex-direction: row; flex-wrap: wrap; justify-content: center;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
