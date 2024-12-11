@@ -88,7 +88,7 @@ public class ContentVisualizatorManager : MonoBehaviour
             rt.anchorMax.Set(0, 1);
             rt.pivot.Set(0, 0);
 
-            itemGameObject.transform.localPosition = Vector3.zero;
+            itemGameObject.transform.localPosition = new Vector3(0 + (i * 80), 0, 0);
 
 
             var image = itemGameObject.GetComponent<Image>();
