@@ -1,8 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using UnityEngine;
 
+[Serializable]
 public class Container
 {
-    public List<Item> Items;
+    [SerializeField] public List<Item> Items;
 
     public Container()
     {
