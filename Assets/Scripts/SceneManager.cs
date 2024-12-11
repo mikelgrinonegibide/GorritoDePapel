@@ -85,6 +85,12 @@ public void TotheLivingRoomFroomPlaza()
         SceneManager.UnloadSceneAsync("Plaza", UnloadSceneOptions.UnloadAllEmbeddedSceneObjects);
     }
 
+    public void StartGame()
+    {
+    SceneManager.LoadSceneAsync( "Salon", LoadSceneMode.Single);
+    SceneManager.UnloadSceneAsync("MainScreen", UnloadSceneOptions.UnloadAllEmbeddedSceneObjects);
+    }
+
 
 #endregion
 }
