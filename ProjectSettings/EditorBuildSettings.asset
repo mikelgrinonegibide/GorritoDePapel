@@ -15,9 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Bedroom/Dormitorio.unity
     guid: f3a85a2d5237d5647a4fe802fda0610e
   - enabled: 1
-    path: Assets/Scenes/Desvan/Desvan1.unity
-    guid: cdb4f06558ad78f4c8e9cbefb445ba25
-  - enabled: 1
     path: Assets/Scenes/PantallaDeCarga.unity
     guid: b3930e2f0d383814a991a05d55be36a9
   - enabled: 1
@@ -33,6 +30,6 @@ EditorBuildSettings:
     path: Assets/Scenes/MainScreen.unity
     guid: b1fbeb19a8e343345898de9c642997f0
   - enabled: 1
-    path: Assets/Scenes/Kitchen/Cocina.unity
-    guid: aefe493bbfde9c54f9d2aab4062b31ad
+    path: Assets/Scenes/Desvan/Desvan.unity
+    guid: a64aafb0ebc922f479129e19b810545c
   m_configObjects: {}
