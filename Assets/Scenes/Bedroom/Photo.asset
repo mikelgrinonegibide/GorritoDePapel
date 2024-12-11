@@ -9,8 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea03ab4d9db766f428d5ae6ed73d6cc4, type: 3}
-  m_Name: Knife
+  m_Script: {fileID: 11500000, guid: 1913d963095fcc8419dace39ae3c8986, type: 3}
+  m_Name: Photo
   m_EditorClassIdentifier: 
-  Name: Knife
-  Image: {fileID: 21300000, guid: 4fcd465658c5e87479841938e90bd66b, type: 3}
+  Name: Photo
+  Action: 0
+  Container:
+    Items:
+    - {fileID: 11400000, guid: e4eee0d6acddae44dba4fd06ae4a8499, type: 2}

@@ -6,25 +6,25 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Plaza.unity
+    path: Assets/Scenes/Plaza/Plaza.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Salon.unity
+    path: Assets/Scenes/Salon/Salon.unity
     guid: 8fbb0f4b607762f4fa2ca7a66918fc6d
   - enabled: 1
-    path: Assets/Scenes/Dormitorio.unity
+    path: Assets/Scenes/Bedroom/Dormitorio.unity
     guid: f3a85a2d5237d5647a4fe802fda0610e
   - enabled: 1
-    path: Assets/Scenes/Desvan.unity
+    path: Assets/Scenes/Desvan/Desvan.unity
     guid: cdb4f06558ad78f4c8e9cbefb445ba25
   - enabled: 1
     path: Assets/Scenes/PantallaDeCarga.unity
     guid: b3930e2f0d383814a991a05d55be36a9
   - enabled: 1
-    path: "Assets/Scenes/Ba\xF1o.unity"
+    path: "Assets/Scenes/Bathroom/Ba\xF1o.unity"
     guid: 4502357357a6b8f43a4f9371665412b9
   - enabled: 1
-    path: Assets/Scenes/Cementerio.unity
+    path: Assets/Scenes/Graveyard/Cementerio.unity
     guid: 37568fdfb90466e4e8ab3b28e7c44e6f
   - enabled: 1
     path: Assets/Scenes/MenuPause.unity
