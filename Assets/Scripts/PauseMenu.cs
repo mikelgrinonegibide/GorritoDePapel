@@ -11,13 +11,12 @@ public class PauseMenu : MonoBehaviour
 
 public void Update()
 {
-if(Input.GetKeyDown(KeyCode.Escape)&& pasue==false)
+if(Input.GetKeyDown(KeyCode.Escape))
 {
     
    SceneManager.LoadSceneAsync("MenuPause",LoadSceneMode.Additive);
    Time.timeScale = 0;
-   pasue= true;
-}
+  }
 }
 
 }
