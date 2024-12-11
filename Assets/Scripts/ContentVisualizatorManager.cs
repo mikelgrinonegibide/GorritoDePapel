@@ -80,6 +80,7 @@ public class ContentVisualizatorManager : MonoBehaviour
         {
             var item = container.Items[i];
             var itemGameObject = Instantiate(itemPrefab, Container.transform, false);
+            itemGameObject.name = item.name;
 
             var rt = itemGameObject.GetComponent<RectTransform>();
 
@@ -93,6 +94,9 @@ public class ContentVisualizatorManager : MonoBehaviour
 
             var image = itemGameObject.GetComponent<Image>();
             image.sprite = item.Image;
+
+            var itemBeh = itemGameObject.GetComponent<ItemBehaviour>();
+            itemBeh.Item = item;
 
         }
 

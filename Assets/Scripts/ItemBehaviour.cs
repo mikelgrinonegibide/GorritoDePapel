@@ -2,12 +2,18 @@ using UnityEngine;
 
 public class ItemBehaviour : MonoBehaviour
 {
-    private void Awake()
+    public Item Item;
+
+
+    void OnMouseDown()
     {
+        Inventory.GetInventory().AddItem(Item);
+
+        Destroy(this);
+
     }
 
-    private void OnMouseDown()
-    {
-    }
+
+
 
 }
