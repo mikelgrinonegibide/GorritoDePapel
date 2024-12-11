@@ -17,6 +17,10 @@ public void photo()
 {
     dialogo.text="foto de pareja";
 }
+public void Cazuela()
+{
+    dialogo.text="cazuela";
+}
 
 
 

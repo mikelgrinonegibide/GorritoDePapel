@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MenuPause.unity
     guid: 1a91ba7a220272c4e8106b4d609f8833
+  - enabled: 1
+    path: Assets/Scenes/Cocina.unity
+    guid: a713980a5e14b484db43992852372034
   m_configObjects: {}
