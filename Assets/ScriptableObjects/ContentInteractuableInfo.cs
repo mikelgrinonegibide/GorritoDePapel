@@ -5,7 +5,6 @@ public class ContentInteractuableInfo : InteractuableInfo
 {
     public Container Container;
 
-
     public ContentInteractuableInfo()
     {
         this.Container = new Container();

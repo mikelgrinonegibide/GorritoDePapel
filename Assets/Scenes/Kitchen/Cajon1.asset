@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Cajon1
   m_EditorClassIdentifier: 
   Name: Cajon1
-  action: 0
-  Content:
-  - {fileID: 11400000, guid: e2df56d517b691f47aa1f46aafc1aad0, type: 2}
+  Action: 0
+  Container:
+    Items:
+    - {fileID: 11400000, guid: e2df56d517b691f47aa1f46aafc1aad0, type: 2}

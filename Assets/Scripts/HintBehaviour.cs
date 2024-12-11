@@ -9,28 +9,28 @@ public class HintBehaviour : MonoBehaviour
     void OnMouseDown()
     {
         Debug.Log("Click");
-        //ShowActions();
+        ShowAction();
     }
 
     #endregion
 
     #region Private methods
 
-    private void ShowActions()
+    private void ShowAction()
     {
         if (Info.Action == ActionTypes.Look)
         {
             var contentInfo = (ContentInteractuableInfo)Info;
 
-            LookAction(contentInfo.Container);
+            LookAction(Info.Name, contentInfo.Container);
 
         }
 
     }
 
-    private void LookAction(Container container)
+    private void LookAction(string title, Container container)
     {
-        ContentVisualizatorManager.Instance.ShowContent(container);
+        ContentVisualizatorManager.Instance.ShowContent(title, container);
     }
 
     #endregion
