@@ -1,14 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using UnityEngine.UIElements;
+
+
 
 public class SceneChanger : MonoBehaviour
 {
+    
+
+
+
 #region script botones
 
 //funciones las cuales permiten el cambio de escena 
+
+
 public void TotheBedroom()
     {
         SceneManager.LoadSceneAsync( "Dormitorio", LoadSceneMode.Single);
