@@ -33,6 +33,6 @@ EditorBuildSettings:
     path: Assets/Scenes/MainScreen.unity
     guid: b1fbeb19a8e343345898de9c642997f0
   - enabled: 1
-    path: Assets/Scenes/Kitchen/a.unity
+    path: Assets/Scenes/Kitchen/Cocina.unity
     guid: aefe493bbfde9c54f9d2aab4062b31ad
   m_configObjects: {}
