@@ -1,10 +1,13 @@
 using TMPro;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ContentVisualizatorManager : MonoBehaviour
 {
 
     [SerializeField] public GameObject ContentVisualizator;
+
     private GameObject Container;
     private TMP_Text Title;
     private Container Content;
@@ -31,6 +34,7 @@ public class ContentVisualizatorManager : MonoBehaviour
     {
         this.Container = this.transform.Find("ContentVisualizator/Container").gameObject;
         this.Title = this.transform.Find("ContentVisualizator/Title").gameObject.GetComponent<TMP_Text>();
+
     }
 
     #endregion
@@ -39,6 +43,7 @@ public class ContentVisualizatorManager : MonoBehaviour
     {
         this.Content = container;
         SetTitle(title);
+        SetItems(container);
         this.ContentVisualizator.SetActive(true);
     }
 
@@ -64,6 +69,43 @@ public class ContentVisualizatorManager : MonoBehaviour
     {
         this.Title.text = title;
     }
+
+    private void SetItems(Container container)
+    {
+        DestroyContainerChildren();
+        var itemPrefab = (GameObject)AssetDatabase.LoadAssetAtPath("Assets/Prefabs/Item.prefab", typeof(GameObject));
+
+        //foreach (var item in container.Items)
+        for (int i = 0; i < container.Items.Count; i++)
+        {
+            var item = container.Items[i];
+            var itemGameObject = Instantiate(itemPrefab, Container.transform, false);
+
+            var rt = itemGameObject.GetComponent<RectTransform>();
+
+            rt.anchoredPosition.Set(0, 0);
+            rt.anchorMin.Set(0, 1);
+            rt.anchorMax.Set(0, 1);
+            rt.pivot.Set(0, 0);
+
+            itemGameObject.transform.localPosition = Vector3.zero;
+
+
+            var image = itemGameObject.GetComponent<Image>();
+            image.sprite = item.Image;
+
+        }
+
+    }
+
+    private void DestroyContainerChildren()
+    {
+        while (Container.transform.childCount > 0)
+        {
+            Destroy(Container.transform.GetChild(0).gameObject);
+        }
+    }
+
 
     #endregion
 
